@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OddOasis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/infinity.png" rel="icon">
+  <link href="assets/img/infinity.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Sep 20 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .create-new-group-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #cda45e; /* Green background */
+  color: #fff; /* White text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.create-new-group-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.create-new-group-button:active {
+  /* Click effect: Subtle inward compression */
+  transform: scale(0.98);
+}
+
+.create-new-group-button:active {
+  background-color: #387e3c; /* Darker green on click */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: #fff;
+}
+
+.create-new-group-button span {
+  font-size: 16px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.add-member-button {
+      display: inline-block;
+      padding: 8px 30px;
+      /* font-size: 16px; */
+      /* font-weight: bold; */
+      text-align: center;
+      text-decoration: none;
+      /* background-color: #3498db; */
+      color: #aaaaaa;
+      border-radius: 2px;
+      border: 2px solid #cda45e;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      transition: background-color 0.3s;
+      height: 45px;
+    }
+
+    .add-member-button:hover {
+      background-color: #cda45e;
+    }
+
+    .add-member-button:before {
+      content: '+';
+      position: absolute;
+      font-weight: bold;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #0c0b09;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .add-member-button:hover:before {
+      opacity: 1;
+    }
+
+    .blegh{
+      display: inline-block;
+      padding: 8px 30px;
+      /* font-size: 16px; */
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      /* background-color: #3498db; */
+      color: white;
+      border-radius: 50px;
+      border: 2px solid #cda45e;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      /* transition: background-color 0.3s; */
+      background-color: #cda45e;
+      margin-bottom: -7px;
+    }
+
+     table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* background-color: #fff; */
+  }
+
+      th, td {
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+      }
+
+      th {
+          /* background-color: #4CAF50; */
+          color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #141312; /* or any color you prefer for odd rows */
+    }
+
+    #mem{
+      height:44px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+961 76 748 236</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11: 00 AM - 7:00 PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <!-- <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0" ><a href="index.html">OddOasis</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="/index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/index.html#menu">Menu</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/index.html#specials">Specials</a></li> -->
+          <li><a class="nav-link scrollto" href="/index.html#events">Upcoming Events</a></li>
+          <li><a class="nav-link scrollto" href="/index.html#chefs">Committee</a></li>
+          <li><a class="nav-link scrollto" href="/index.html#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="events.html">Events and Activities</a></li>
+              <li class="dropdown"><a href="#"><span>Create an Activity</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Customize Attendees</a></li>
+                  
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="/index.html#testimonials">Testimonials</a></li>
+              <li><a href="/index.html#why-us">Why Become a Member</a></li>
+              <li><a href="event_loc.html">Event Locations</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="/index.html#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Create an Activity</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="breadcrumbs" style="margin-top: 130px">
+      <div class="container" >
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Customize Attendees</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Customize Attendees</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="inner-page">
+      <div class="container" >
+        <!-- <p>
+          Example inner page template
+        </p> -->
+        <button class="create-new-group-button" id="create">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        </svg>
+        <span >Create New Group</span>
+      </button>
+
+      <!-- <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <!-- <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 7:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mohammad.ballouz@lau.edu</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+961 76 748 236</p>
+              </div>
+
+            </div>
+
+          </div> -->
+
+          <div style="display:none" id="lo">
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <div id="contact" class="contact" id="cunt" >
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="margin-top: 60px; margin-left: -12px" id="ng">New Group</h2>
+          <!-- <p>Contact Us</p> -->
+        </div>
+      </div>
+
+           <!-- ############## Riiiiiiiii change form ##################  -->
+           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group"  id="gname">
+                  <input type="text" name="group-name" class="form-control" id="game" placeholder="Group Name" required>
+                </div>
+                <div class="col-md-6 form-group" id="all" >
+                  <a href="#" class="add-member-button">Add Member</a>
+
+                </div>
+                <div >
+                  <label for="mem" id="lab" style="margin-top: 5px; margin-bottom: 15px; color: #aaaaaa;
+  font-family: Poppins, sans-serif; display: none">To add a member to the group:<br><br>• Please enter their <mark style="background-color: #0c0b09; color: #cda45e;">username</mark>  or <mark style="background-color: #0c0b09; color: #cda45e;">email address</mark>.<br>• You can add multiple members by writing each member on a new line. Please make sure to press <mark style="background-color: #0c0b09; text-decoration: underline; color: #aaaaaa;">enter</mark> between each member.<br>• You can resize the box by moving its bottom right corner.</label>
+                <textarea class="form-control" id="mem" name="mem" rows="8" placeholder="Members" ></textarea>
+                
+              </div>
+              
+              </div>
+              <div class="col-md-6 form-group" id="nig" style="margin-top: 10px; display:none">
+                  <a href="#" class="blegh">Add</a>
+                </div> 
+                 
+              <div class="form-group mt-3" style="margin-top: -89px; ">
+                <input type="text" class="form-control" name="category" id="cat" placeholder="Category">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" id="lol" name="groupdesc" rows="8"  placeholder="Group Description (Rules or Guidelines, Purpose or Characteristics...)" ></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" id="sum">Create Group</button></div>
+            </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="section-title">
+          
+          <p style="margin-top: 100px; margin-left: -10px;">Your Groups</p>
+        </div>
+      <!-- </div> -->
+
+        <h2 style="margin-top: 20px; margin-left: -9px; font-size: 25px;" id="ng">DUNKELHEIT</h2>
+        <table >
+        <tr>
+          <th>Member</th>
+          <th>Email Address and Phone Number</th>
+          <th>Joining Date</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+
+      </div>
+    </div>
+      </div>
+      
+    </section>
+    <script> 
+                    const div1 = document.getElementById("all");
+                    const div2 = document.getElementById("lab");
+                    const div3 = document.getElementById("mem");
+                    const div4 = document.getElementById("nig");
+                    const div5 = document.getElementById("create");
+                    const div10 = document.getElementById("lo");
+
+                    div1.addEventListener("click", function() {
+                    if (div2.style.display === "block") {
+                      div2.style.display = "none";
+                      div3.style.display = "none";
+                      div4.style.display = "none";
+                    } else {
+                      div2.style.display = "block";
+                      div3.style.display = "block";
+                      div4.style.display = "block";
+                    }})
+
+                     div5.addEventListener("click", function() {
+                      div10.style.display = "block";
+                  });
+                    </script>
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>OddOasis</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +961 76 748 236<br>
+                <strong>Email:</strong> mohammad.ballouz@lau.edu<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Stay Inspired, Stay Informed. Subscribe to Our Newsletter for a weekly dose of adventure in your inbox</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

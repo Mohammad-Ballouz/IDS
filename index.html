@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OddOasis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/infinity.png" rel="icon">
+  <link href="assets/img/infinity.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Sep 20 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #0c0b09;
+      border: 1px solid #625b4b;
+      color: #808080;
+      font-weight: 400;
+    }
+
+    .selected {
+      background-color: #cda45e;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+961 76 748 236</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11: 00 AM - 7:00 PM</span></i>
+      </div>
+
+      <!-- <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li> -->
+        </ul>
+      </div> 
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">OddOasis</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Clubs</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#specials">Specials</a></li> -->
+          <li><a class="nav-link scrollto" href="#events">Upcoming Events</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Committee</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="events.html">Events and Activities</a></li>
+              <li class="dropdown"><a href="#"><span>Create an Activity</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="cus_attend.html">Customize Attendees</a></li>
+                  
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#why-us">Why Become a Member</a></li>
+              <li><a href="event_loc.html">Event Locations</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Create an Activity</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>OddOasis</span></h1>
+          <h2 style="font-size: 21px;">Knitting narwhals and debating the ethics of pineapple on pizza-we do it all</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Create an Activity</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>At OddOasis, we believe that life is a journey meant to be experienced and celebrated.</h3>
+            <p class="fst-italic">
+              Our activity club portal is a vibrant hub designed for individuals who seek excitement, camaraderie, and a touch of the extraordinary in their lives. <strong>What Sets Us Apart:</strong> 
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Diverse Activities: a wide range of activities to cater to every interest.</li>
+              <li><i class="bi bi-check-circle"></i> Inclusive Community: Our community is built on the principles of inclusivity and acceptance.</li>
+              <li><i class="bi bi-check-circle"></i> Passionate Leaders: Our team of experienced and passionate leaders is dedicated to curating unique and memorable experiences.</li>
+            </ul>
+            <p>
+               Our community is a place where you can find enriching experiences and meaningful connections. 
+               Whether you prefer to venture out on your own or are looking for companions to share the journey, 
+               OddOasis is the starting point for your next unforgettable adventure.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>Why Become a Member</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Passion-Driven Origins</h4>
+              <p>Our story begins with a shared passion for adventure. Founded by a group of thrill-seekers, our activity club portal emerged from the collective desire to create a hub where individuals with a zest for life could converge.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Innovation in Connection</h4>
+              <p>OddOasis is not just a club; it's an innovative platform for forging connections. We believe in the power of shared experiences that create lasting bonds, offering a dynamic space where members can connect on a deeper level.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4> Be Different</h4>
+              <p>Our activity club portal constitutes a haven for those who dare to be different. We believe in celebrating individuality and fostering a community where each member can explore their unique interests. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clubs</h2>
+          <p>Check Our Clubs</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-mind">Mind & Body</li>
+              <li data-filter=".filter-his">History & Culture</li>
+              <li data-filter=".filter-science">Science, Tech, & Innovation</li>
+              <li data-filter=".filter-art">Art & Performance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-his">
+            <img src="assets/img/time.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Time-Traveler's Tea Society</a><span>$5.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club where members discuss and explore different historical periods while enjoying unique teas from those times.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/quantum.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Quantum Chess Club</a><span>$6.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Chess enthusiasts explore the strategic depths of the game while incorporating elements of quantum physics for a mind-bending experience.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-art">
+            <img src="assets/img/eco.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Eco-Artisans Guild</a><span>$7.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club focused on creating eco-friendly art projects using recycled materials and promoting sustainability through artistic expression.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-art">
+            <img src="assets/img/sound.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Soundscapes Symphony Society</a><span>$8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club dedicated to creating and appreciating ambient soundscapes, combining music, nature sounds, and technology for immersive auditory experiences.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-his">
+            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#" style="color:red">Gastronomic Adventurers Society</a><span style="color: red">Inactive</span>
+            </div>
+            <div class="menu-ingredients">
+              A club for foodies who want to explore and recreate unique and exotic dishes from around the world.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-mind">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bioluminescent Biking Brigade</a><span>$4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A nighttime biking club that uses glow-in-the-dark accessories and LED lights to create a visually stunning and safe biking experience.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Virtual Reality Voyagers</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club dedicated to exploring virtual reality environments, discussing emerging technologies, and experimenting with VR development.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Astronomy and Astrology Fusion Forum</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club that combines scientific discussions about astronomy with the mystical aspects of astrology, creating a unique blend of perspectives.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-mind">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#" style="color:red">Puzzle Masters </a><span style="color: red">Inactive</span>
+            </div>
+            <div class="menu-ingredients">
+              A club where members tackle and create intricate puzzles, from jigsaw puzzles to brain teasers and escape room challenges.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Retro Gaming Renaissance</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club dedicated to reviving and appreciating classic video games, arcade machines, and tabletop games from the past.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-art">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Dance Fusion Fusion</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A dance club that explores the fusion of different dance styles, blending traditional and contemporary moves for a unique and dynamic experience.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-mind">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mindful Mingle Mixers</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club focused on holistic well-being, combining mindfulness practices with social events to promote mental and emotional balance.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-art">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Surreal Cinema Syndicate</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A film club dedicated to exploring, watching, and discussing avant-garde, surreal, and mind-bending cinema from around the world.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#" style="color:red">Cipher Sleuths Association </a><span style="color: red">Inactive</span>
+            </div>
+            <div class="menu-ingredients">
+              A club for enthusiasts of cryptography and code-breaking, where members collaborate to solve challenges and create their own encrypted messages.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-his">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tales and Trails Society </a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club that combines storytelling and hiking, where members share and create stories while exploring scenic trails and nature reserves.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-his">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#" style="color:red">Mystical Mixology Masters</a><span style="color: red">Inactive</span>
+            </div>
+            <div class="menu-ingredients">
+              A club focused on crafting magical and fantastical cocktails, experimenting with ingredients and themes inspired by myths, legends, and fantasy.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Interactive Storyboard Studio</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A collaborative club where members create interactive stories using various media, including animations, sound effects, and choose-your-own-adventure elements.
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-art">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Fantasy Fashion Forge</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club where members design and create fantasy-inspired fashion, combining elements of costume design, cosplay, and avant-garde fashion.
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-science">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Steampunk Science Society</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A club that explores the intersection of science and aesthetics, focusing on DIY steampunk-inspired experiments and inventions.
+            </div>
+          </div>
+
+          
+          <div class="col-lg-6 menu-item filter-his">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Pop-Up Philosophy Pavilion</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+             A club that organizes impromptu philosophical discussions in public spaces, encouraging members to engage in thoughtful conversations with passersby.
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <!-- <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Specials</h2>
+          <p>Check Our Specials</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Architecto ut aperiam autem id</h3>
+                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Et blanditiis nemo veritatis excepturi</h3>
+                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> -->
+    <!-- </section> -->
+    <!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Upcoming Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$189</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$290</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>$99</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Devise an Activity</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          
+          <div class="row"> 
+            <div class="button-container">
+              <div id="button1" class="button" style="margin-left: -43px;" onclick="toggleButton('button1')">Virtual</div>
+              <div id="button2" class="button" style="margin-right: 865px;" onclick="toggleButton('button2')">In-Person</div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <label id="o" style="margin-top: 15px; margin-bottom: 7px; width: 570px; color: #aaaaaa;font-family: Poppins, sans-serif; display:none">
+              • Please refer to the <a href="event_loc.html">Event Locations</a> page for our picturesque locations.<br><br>
+              • OR suggest a location, and the board will assess its adequacy.</label>
+              <label id="okeh" style="margin-top: 15px;  color: #aaaaaa;font-family: Poppins, sans-serif; display:none">
+              Specify:<br><br> • Virtual platform or technology that will be used for the activity (e.g., Zoom, Microsoft Teams, a specific online platform...)<br><br>
+            </label>
+              <input type="text" class="form-control" name="loc" id="loc" placeholder="Location" style="margin-bottom: 20px; display: none">
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" id="kay" style="display:none">
+              <label  style="margin-top: 62px;  color: #aaaaaa;font-family: Poppins, sans-serif; ">
+              • Registration method: registration link, online form, QR code distribution... Provide the link in the <strong>description of the activity </strong> 
+            </label>
+              <input type="text" class="form-control" name="info" id="info" placeholder="Regsitration Method" style="margin-top: 26px;">
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" id="stab" style="display:none">
+              <label  style="margin-top: 62px;  color: #aaaaaa;font-family: Poppins, sans-serif; ">
+              • Format of the conducted event: video call, live stream, recorded session, self-paced, screening...
+            </label>
+              <input type="text" class="form-control" name="forma" id="forma" placeholder="Event Format" style="margin-top: 26px;">
+              <div class="validate"></div>
+            </div>
+
+            <label for="selectMenu" style="margin-bottom: 9px; color: #aaaaaa;
+  font-family: Poppins, sans-serif">Category of the Activity</label>
+
+            <select id="selectMenu" name="fruits" style="margin-bottom: 20px; width: 1114px; font-weight: 400; margin-left: 13px;color: #808080; background-color:#0c0b09; border: 1px solid #625b4b">
+                <option value="fw">Fitness, Well-being, and Mindfulness</option>
+                <option value="sr">Sports and Recreation</option>
+                <option value="ac">Arts and Creativity</option>
+                <option value="es">Educational and Skills-building</option>
+                <option value="tg">Technology</option>
+                <option value="cs">Cultural</option>
+                <option value="eo">Environmental and Outdoor Activities</option>
+                <option value="vc">Volunteer and Community Service</option>
+                <option value="gf">Gastronomy and Foodie Events</option>
+                <option value="ge">Gaming and Esports</option>
+                <option value="mp">Music and Performing Arts</option>
+                <option value="mg">Mind Games and Puzzles</option>
+                <option value="fd">Fashion and Design</option>
+                <option value="ap">Animal and Pet Activities</option>
+                <option value="se">Science and Exploration</option>
+                <option value="t">Travel</option>
+                <option value="ey">Entertainment Activities</option>
+                <option value="sx">Social Events</option>
+                <option value="etr">Entrepreneurial</option>
+            </select>
+                                                                   
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
+              <input type="text" class="form-control" name="e-name" id="e-name" placeholder="Event/Activity Name" style="margin-top: 15px;">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
+              <input type="text" class="form-control" name="duration" id="duration" placeholder="Expected Duration of the Activity" style="margin-top: 15px;">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="deadline" id="deadline" placeholder="Registration Deadline Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="cost" id="cost" placeholder="Fee for participating in the activity (In $)" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="req" id="req" placeholder="Equipment participants need for the activity" style="margin-top: 15px;">
+              <div class="validate"></div>
+            </div>
+
+            <label style="margin-top: 15px; margin-bottom: 7px; color: #aaaaaa;
+  font-family: Poppins, sans-serif">Activity Privacy Settings</label>
+
+            <label id="wh" style="margin-top: 15px; margin-bottom: 7px; color: #aaaaaa;
+  font-family: Poppins, sans-serif; display: none;"> To customize the groups of attendees <br>• You can create predefined groups like "Friends", "Colleagues", or "Members"..., then enter them in the field below. You can create a group by clicking <a href="cus_attend.html">here</a>.
+
+<br><br>To invite certain attendees<br>• Please provide their name/username, email, and phone number. <br> • OR enter a certain custom criteria for the attendees.<br>• OR provide a name of a club.
+</label>
+            <div>
+              <input type="radio" name="event-type" id="pub" value="public" style="height: 12px; margin-bottom: 10px;" checked>
+              <label for="pub" style="margin-right: 40px;  color: #aaaaaa;
+              font-family: Poppins, sans-serif"">Public (Anyone can join)</label>
+            
+              <input  type="radio" name="event-type" id="priv" value="private" style="height: 12px; ">
+              <label  for="priv" style="margin-right: 40px;  color: #aaaaaa;
+              font-family: Poppins, sans-serif"" >Private (Members)</label>
+
+              <input  type="radio" name="event-type" id="spec" value="Specific" style="height: 12px; ">
+              <label  for="spec" style="color: #aaaaaa;
+              font-family: Poppins, sans-serif">Specific Participants </label>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <textarea class="form-control" name="in-atten" id="in-atten" placeholder="Specify the Intended Attendees" style="margin-top: 15px; height:44px; display: none;" data-rule="minlen:1" data-msg="Please enter at least 1 chars"></textarea>
+              <div class="validate"></div>
+            </div>
+            </div>
+          
+            <script>
+              let selectedButton = null;
+
+              function toggleButton(buttonId) {
+                const button = document.getElementById(buttonId);
+
+                // Deselect the previously selected button (if any)
+                if (selectedButton) {
+                  document.getElementById(selectedButton).classList.remove('selected');
+                }
+
+                // Select the clicked button
+                button.classList.add('selected');
+                selectedButton = buttonId;
+              }
+
+              // Initial selection (optional):
+              // toggleButton("button1"); // Select button1 initially (adjust as needed)
+
+                const div1 = document.getElementById("button2");
+                const div2 = document.getElementById("button1");
+                const div3 = document.getElementById("loc");
+                const div4 = document.getElementById("spec");
+                const div5 = document.getElementById("in-atten");
+                const div6 = document.getElementById("priv");
+                const div7 = document.getElementById("pub");
+                const div8 = document.getElementById("wh");
+                const div9 = document.getElementById("o");
+                const div10 = document.getElementById("okeh");
+                const div11 = document.getElementById("kay");
+                const div12 = document.getElementById("stab");
+
+
+                div1.addEventListener("click", function() {
+                  div3.style.display = "block";
+                  div9.style.display = "block";
+                  div10.style.display = "none";
+                  div11.style.display = "none";
+                  div12.style.display = "none";
+                  div3.placeholder = "In-Person Location"
+                });
+
+                div2.addEventListener("click", function() {
+                  div3.style.display = "block";
+                  div3.placeholder = "Platform/Technology used";
+                  div9.style.display = "none";
+                  div10.style.display = "block";
+                  div11.style.display = "block";
+                  div12.style.display = "block";
+                });
+                
+                div4.addEventListener("click", function() {
+                  div5.style.display = "block";
+                  div8.style.display = "block";
+                });
+
+                div6.addEventListener("click", function() {
+                  div5.style.display = "none";
+                  div8.style.display = "none";
+                });
+
+                div7.addEventListener("click", function() {
+                  div5.style.display = "none";
+                  div8.style.display = "none";
+                });
+            </script>   
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Description of the activity, including its purpose, speakers, goals, and any specific instructions, requirements, restrictions, or necessary information"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Create</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Being a software developer, I often find myself immersed in work and in need of a break. OddOasis has been a game-changer for me. I've connected with fellow developers who share similar interests, and we organize coding meetups and hackathons. It's a refreshing way to unwind while still doing what I love.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Software Developer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  OddOasis has become my artistic sanctuary. It seamlessly connects me with a community of like-minded individuals, offering a diverse range of engaging activities. This platform has not only expanded my creative horizons but also provided a supportive space to share and grow with fellow artists. A true gem for anyone seeking inspiration and connection in the art world.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/rii.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Artist</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  OddOasis is a godsend for gamers like me. I've connected with players across various genres, organized epic gaming nights, and even joined a competitive esports team. It's not just about playing games; it's about building a community that shares the same passion and excitement for the gaming world. This portal has taken my gaming experience to a whole new level!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/gamer-502.jpg" class="testimonial-img" alt="">
+                <h3>Ben Karlis</h3>
+                <h4>Gamer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Joining OddOasis has completely transformed my weekends! The variety of adventure activities available is astounding. Whether it's rock climbing, hiking, or kayaking, the portal connects me with like-minded individuals, making each experience unforgettable. The user-friendly interface and detailed event descriptions ensure I always know what to expect. Thanks to the portal, I've discovered a passion for activities I never thought I'd try.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/t.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Adventure Enthusiast</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As a fitness enthusiast, I appreciate the wide range of sports and fitness activities available on the portal. From group workouts to specialized training sessions, the portal caters to all fitness levels and preferences. The ability to track my progress and connect with others who share my fitness goals has been a game-changer. The portal has motivated me to stay active and healthy in a fun and engaging way.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/trainer.png" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Fitness Trainer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Committee</h2>
+          <p>Our Activity Coordinators</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/chefs/photo-1525134479668-1bee5c7c6845.avif" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Annie White</h4>
+                  <span>Entrepreneur</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/chefs/p.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Graphic Designer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/chefs/w.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Project Manager</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from Our Events</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event8.webp" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event8.webp" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/scale.webp class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/scale.webp" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/event7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/event7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 7:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mohammad.ballouz@lau.edu</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+961 76 748 236</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>OddOasis</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +961 76 748 236<br>
+                <strong>Email:</strong> mohammad.ballouz@lau.edu<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Stay Inspired, Stay Informed. Subscribe to Our Newsletter for a weekly dose of adventure in your inbox</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
